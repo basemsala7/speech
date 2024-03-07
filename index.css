@@ -1,0 +1,58 @@
+body {
+  background: rgb(161, 181, 194);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: loading 2s;
+}
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  background-color: honeydew;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 2rem;
+}
+#result {
+  border-radius: 8px;
+}
+/*Button Three*/
+.button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  position: relative;
+  background-color: #55ae8fb4;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+.button:hover {
+  box-shadow: rgba(194, 180, 180, 0.3) 0px 19px 38px,
+    rgba(191, 168, 168, 0.22) 0px 15px 12px;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    transform: translateX(0px);
+  }
+}
